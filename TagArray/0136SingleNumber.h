@@ -6,6 +6,7 @@
 #define LEET_0136SINGLENUMBER_H
 #include "../common/allHeaders.h"
 
+
 int singleNumber(vector<int> x) {
     unordered_map<int, int> num;
     for (auto& elem: x) {
