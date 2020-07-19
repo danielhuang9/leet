@@ -34,4 +34,5 @@ void test() {
     bool hasDup = containsDupByMap(x);
     cout << hasDup << endl;
 }
+
 #endif //LEET_0217CONTAINSDUPLICATE_H

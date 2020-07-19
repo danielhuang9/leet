@@ -9,7 +9,7 @@
 
 int singleNumber(vector<int> x) {
     unordered_map<int, int> num;
-    for (auto& elem: x) {
+    for (auto& elem : x) {
         num[elem]++;
     }
 

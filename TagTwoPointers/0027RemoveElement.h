@@ -23,7 +23,6 @@ int removeElement(vector<int>& nums, int val) {
 
     cout << j + 1 << endl;
     return j + 1;
-
 }
 
 void test() {
