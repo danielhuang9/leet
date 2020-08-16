@@ -6,14 +6,23 @@
 #define LEET_0007REVERSEINTEGER_H
 #include "../common/allHeaders.h"
 int reverse(int x) {
-    string number = to_string(x);
-    int digits = number.length();
+    int sign = 1;
 
-    for (int i = 0, j = digits-1; i<j; i++, j--) {
-        swap(number[i], number[j]);
+    if (x < 0) {
+        sign = -1;
+        x = abs(x);
     }
-    int num = stoi(number);
-    return num;
+
+    int ret = 0;
+    while (x > 0) {
+        int reminder = x % 10;
+        x /= 10;
+        ret = (ret*10) + reminder;
+    }
+
+    ret *= sign;
+
+    return ret;
 }
 
 void test() {
